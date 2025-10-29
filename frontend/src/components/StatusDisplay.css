@@ -1,0 +1,62 @@
+.status-display {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #f8f9ff;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.status-label {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-display.processing .status-label {
+  color: #667eea;
+}
+
+.status-display.completed .status-label {
+  color: #10b981;
+}
+
+.status-display.failed .status-label {
+  color: #ef4444;
+}
+
+.status-progress {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.status-message {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s;
+}
+
+.status-error {
+  margin-top: 8px;
+  color: #ef4444;
+  font-size: 14px;
+}
+
